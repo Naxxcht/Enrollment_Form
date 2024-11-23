@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Student Enrollment Form</h1>
+    </div>
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <div class="list">
+            <ol>
+                <li>Fill in the form fields.</li>
+                <li>Check your interests.</li>
+                <li>Click "Enroll Now" to submit.</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div class="container">
+         <div class="form">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Student Information</legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="100" required>   
+                    <br><br>
+
+                    <label>Sex:</label>
+                    <input type="radio" id="male" name="sex" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" value="Female">
+                    <label for="female">Female</label>
+                    <br><br>
+
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value="BSIT">BS Information Technology</option>
+                        <option value="BSSW">BS Social Work</option>
+                        <option value="BSPA">BS Public Administration</option>
+                        <option value="BSCS">BS Computer Science</option>
+                        <option value="BSed">Bachelor of Secondary Education</option>
+                        <option value="BFA">Bachelor of Fine Arts</option>
+                    </select>
+                    <br><br>
+
+                    <label>Interests:</label><br>
+                    <input type="checkbox" id="web-dev" name="interests" value="Web Development">
+                    <label for="web-dev">Web Development</label><br>
+                    <input type="checkbox" id="data-science" name="interests" value="Data Science">
+                    <label for="data-science">Data Science</label><br>
+                    <input type="checkbox" id="networking" name="interests" value="Networking">
+                    <label for="networking">Networking</label><br>
+                    <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+                    <label for="graphic-design">Graphic Design</label><br><br>
+
+                    <div class="btn">
+                        <button type="submit">Enroll Now</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="table">   
+        <h3>List of students enrolled</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Sex</th>
+                    <th>Course</th>
+                    <th>Interests</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Joshua Denado</td>
+                    <td>hotdog@gmail.com</td>
+                    <td>20</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Web Development</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Aaron Faderagao</td>
+                    <td>fade@example.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>John Oliver Liwanag</td>
+                    <td>johnoliver@example.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Prince Agustines</td>
+                    <td>prince@example.com</td>
+                    <td>19</td>
+                    <td>Male</td>
+                    <td>BSIT</td>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Angelica Castillo</td>
+                    <td>angelica@example.com</td>
+                    <td>19</td>
+                    <td>Famale</td>
+                    <td>BSIT</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Sharlene Habito</td>
+                    <td>sya@example.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Graphic Design</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Jeanne Nicole Gianan</td>
+                    <td>jeanne@example.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Patrick Lagaya</td>
+                    <td>pat@example.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Networking</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Joanne Juanane</td>
+                    <td>jo@example.com</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>BSIT</td>
+                    <td>Graphic Design</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
